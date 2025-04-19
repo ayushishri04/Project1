@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fa;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .task-container, .calendar {
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  .task {
+    padding: 10px;
+    background-color: #e0f7fa;
+    margin: 10px 0;
+    cursor: grab;
+    border: 1px solid #00acc1;
+    border-radius: 5px;
+  }
+  
+  #time-slots {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .slot {
+    padding: 15px;
+    background-color: #fff;
+    border: 2px dashed #ccc;
+    min-height: 50px;
+    border-radius: 6px;
+    position: relative;
+  }
+  
+  .slot.filled {
+    background-color: #c8e6c9;
+    border-color: #388e3c;
+  }
+  
