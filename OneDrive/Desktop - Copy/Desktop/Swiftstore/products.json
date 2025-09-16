@@ -1,0 +1,12 @@
+[
+  { "name": "Paracetamol 500mg", "brand": "Calpol", "category": "Pain Relief", "price": 2.99, "image": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=600&auto=format&fit=crop" },
+  { "name": "Ibuprofen 200mg", "brand": "Advil", "category": "Pain Relief", "price": 3.49, "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=600&auto=format&fit=crop" },
+  { "name": "Cough Syrup", "brand": "Benylin", "category": "Cold & Flu", "price": 5.99, "image": "https://images.unsplash.com/photo-1609705025031-7c4c8e3a2d5a?q=80&w=600&auto=format&fit=crop" },
+  { "name": "Vitamin C 1000mg", "brand": "Now Foods", "category": "Vitamins", "price": 7.49, "image": "https://images.unsplash.com/photo-1599050751795-5cda3a4b708d?q=80&w=600&auto=format&fit=crop" },
+  { "name": "Antacid Tablets", "brand": "Tums", "category": "Digestion", "price": 4.29, "image": "https://images.unsplash.com/photo-1626716493139-7686b0f5a7a1?q=80&w=600&auto=format&fit=crop" },
+  { "name": "Allergy Relief", "brand": "Zyrtec", "category": "Allergy", "price": 6.99, "image": "https://images.unsplash.com/photo-1584312903318-8d3b6a3e7a9b?q=80&w=600&auto=format&fit=crop" },
+  { "name": "Thermometer", "brand": "Omron", "category": "Devices", "price": 9.99, "image": "https://images.unsplash.com/photo-1582719478304-4d7b4c0a1c3a?q=80&w=600&auto=format&fit=crop" },
+  { "name": "Hand Sanitizer", "brand": "Purell", "category": "Hygiene", "price": 2.49, "image": "https://images.unsplash.com/photo-1584265549845-1284ac2c0d7a?q=80&w=600&auto=format&fit=crop" },
+  { "name": "Face Mask (Pack of 50)", "brand": "3M", "category": "Hygiene", "price": 12.99, "image": "https://images.unsplash.com/photo-1584291527935-456e8e2dd734?q=80&w=600&auto=format&fit=crop" },
+  { "name": "Bandages", "brand": "Band-Aid", "category": "First Aid", "price": 3.19, "image": "https://images.unsplash.com/photo-1622219880185-47f345d38160?q=80&w=600&auto=format&fit=crop" }
+]

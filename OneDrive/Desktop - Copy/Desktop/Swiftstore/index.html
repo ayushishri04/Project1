@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiftstore Meds — Fast Medicine Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="logo" href="#home">Swiftstore<span>Med</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#medicines">Medicines</a></li>
+                    <li><a href="#how">How it works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="cart-btn" class="btn ghost" type="button" aria-haspopup="dialog" aria-controls="cart-drawer">Cart (0)</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <h1>Get medicines delivered in under <span class="accent">30 minutes</span></h1>
+                    <p class="subtitle">Reliable, fast, and affordable pharmacy at your fingertips. From prescriptions to wellness essentials — we bring the store to your door.</p>
+                    <form id="search-form" class="search">
+                        <input id="search-input" type="search" placeholder="Search medicines, brands, categories…" aria-label="Search medicines">
+                        <button class="btn primary" type="submit">Search</button>
+                    </form>
+                    <div class="badges">
+                        <span>🚚 30-min delivery</span>
+                        <span>💊 Genuine medicines</span>
+                        <span>🔒 Secure payments</span>
+                    </div>
+                    <div class="cta-actions">
+                        <a class="btn primary" href="#medicines">Shop Medicines</a>
+                        <a class="btn ghost" href="#how">See how it works</a>
+                    </div>
+                </div>
+                <div class="hero-art" aria-hidden="true"></div>
+            </div>
+        </section>
+
+        <section id="medicines" class="section">
+            <div class="container section-head">
+                <h2>Popular medicines</h2>
+                <p class="subtitle">Curated essentials. Tap to add and get them fast.</p>
+                <div class="controls" aria-label="Filters and sorting">
+                    <select id="category-filter" aria-label="Filter by category">
+                        <option value="">All categories</option>
+                    </select>
+                    <select id="sort-select" aria-label="Sort products">
+                        <option value="">Recommended</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="name-asc">Name: A to Z</option>
+                    </select>
+                    <span id="result-count" class="muted"></span>
+                </div>
+            </div>
+            <div id="product-container" class="grid"></div>
+        </section>
+
+        <section id="how" class="section alt">
+            <div class="container how-grid">
+                <div class="how-step">
+                    <div class="icon">🔎</div>
+                    <h3>Search</h3>
+                    <p>Find medicines by name, brand, or category. We show availability instantly.</p>
+                </div>
+                <div class="how-step">
+                    <div class="icon">📦</div>
+                    <h3>Order</h3>
+                    <p>Add to cart and checkout securely. Upload prescriptions where required.</p>
+                </div>
+                <div class="how-step">
+                    <div class="icon">⚡</div>
+                    <h3>Delivered fast</h3>
+                    <p>Your order arrives in minutes with live tracking and updates.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section cta">
+            <div class="container cta-card">
+                <h2>Need something urgent?</h2>
+                <p class="subtitle">Tell us what you need and we'll prioritize your delivery.</p>
+                <form id="cta-form" class="cta-form" novalidate>
+                    <input type="text" id="need" placeholder="e.g. Paracetamol 500mg, 2 strips" aria-label="Your urgent need" required>
+                    <input type="tel" id="phone" placeholder="Phone number" aria-label="Your phone" required>
+                    <button class="btn primary" type="submit">Request Callback</button>
+                </form>
+                <p id="cta-status" class="status" role="status" aria-live="polite"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <p>&copy; 2025 Swiftstore Med. All rights reserved.</p>
+            <nav aria-label="Footer">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#medicines">Medicines</a></li>
+                    <li><a href="#how">How it works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer -->
+    <div id="cart-overlay" class="cart-overlay" hidden></div>
+    <aside id="cart-drawer" class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+        <div class="cart-header">
+            <h3 id="cart-title">Your Cart</h3>
+            <button id="cart-close" class="btn ghost" type="button" aria-label="Close cart">✕</button>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total"><span>Total</span> <strong id="cart-total">$0.00</strong></div>
+            <button class="btn primary" type="button" id="checkout-btn">Checkout</button>
+        </div>
+    </aside>
+
+    <script src="style.js"></script>
+</body>
+</html>
